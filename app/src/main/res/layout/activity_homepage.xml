@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage">
+
+    <LinearLayout
+        android:background="@drawable/homepage"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/boomplay"
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+        </ImageView>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:text="Good to See You Here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="19dp"
+                android:layout_marginTop="20dp"
+                android:text="Tell Me Which Song You Like"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+            <EditText
+                android:id="@+id/edit"
+                android:textColorHint="@color/black"
+                android:hint="calm  down\nTime Bomb\n Twerk\n Ego \n Koshens \n Malaika\nYahweh\nKiboko Yao\nLukas Petelo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </EditText>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_download"
+            android:textStyle="bold"
+            android:text="Go Downloads"
+            android:textColor="@color/black"
+            android:layout_marginTop="140dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>
